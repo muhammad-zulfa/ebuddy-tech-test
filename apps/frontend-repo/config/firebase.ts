@@ -3,12 +3,12 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 export const firebaseConfig = {
-  apiKey: "AIzaSyCqg13aRStxworwGTZYWJz2RsdtKRk0N98",
-  authDomain: "ebuddy-9931d.firebaseapp.com",
-  projectId: "ebuddy-9931d",
-  storageBucket: "ebuddy-9931d.firebasestorage.app",
-  messagingSenderId: "469464385880",
-  appId: "1:469464385880:web:0d6505863b95c60552bd2d",
+  apiKey: process.env.NEXT_PUBLIC_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_APP_ID,
 };
 
 // Initialize Firebase

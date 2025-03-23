@@ -1,0 +1,11 @@
+{
+  "watch": ["src", "bin"],
+  "ignore": [".git", "node_modules/", "build/", "coverage/"],
+  "verbose": true,
+  "delay": "1000",
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "ext": "ts",
+  "exec": "concurrently \"npx tsc --watch\" \"ts-node bin/index.ts\""
+}
